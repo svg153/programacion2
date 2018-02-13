@@ -2,14 +2,18 @@ class Punto2D {
   // Atributos: coordenadas cartesianas
   private double x;
   private double y;
+
   // Constructores
   Punto2D() {
     x = 0; y = 0;
   }
+
   Punto2D (double x,
            double y) {
-    this.setXY(x,y);
+    this.x = x;
+    this.y = y;
   }
+
   // Métodos "normales" del objeto
   double distanciaAl0() {
     return Math.sqrt(x*x + y*y);

@@ -2,14 +2,17 @@ class Punto2D {
   // Atributos: coordenadas polares
   private double r;
   private double a;
+
   // Constructores
   Punto2D() {
     r = 0;
   }
+
   Punto2D (double x,
            double y) {
     this.setXY(x,y);
   }
+
   // Métodos "normales" del objeto
   double distanciaAl0() {
     return r;
@@ -17,7 +20,7 @@ class Punto2D {
 
   void setX(double x) {
     double y = this.getY();
-    setXY(x, y);
+    this.setXY(x, y);
   }
   
   double getX() {
@@ -26,7 +29,7 @@ class Punto2D {
   
   void setY(double y) {
     double x = this.getX();
-    setXY(x, y);
+    this.setXY(x, y);
   }
   
   double getY() {
