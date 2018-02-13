@@ -1,0 +1,36 @@
+* Sesión 0: presentación
+* Sesión 1: clases, objetos y referencias (transparencias Tema 1, no en orden)
+  - Clase: plantilla para fabricar objetos
+  - Objetos: datos en memoria
+  - Variables, atributos, parámetros, etc.: referencias
+  - Todo realizado con una clases genérica A que es un contenedor de un entero
+  - Transparencias tema 1
+* Sesión 2: anatomía de una clase (transparencias Tema 1, no en orden)
+  - Recordar: una clase es una plantilla para
+    fabricar (new) objetos
+  - Anatomía:
+    - Atributos
+    - Métodos
+  - Ejemplo Punto2D
+    - Empezamos representando el punto con coordenadas cartesianas
+    - Aparecen problemas de ámbito de nombres
+    - Sin esconder nada (sin modificadores), el código del cliente accede a atributos.
+    - Evolucionamos a polares: impacto en el código cliente
+* Sesión 3: repaso, terminología, modificadores y modelización (transparencias Tema 1, no en orden)
+  - Cerramos el ejemplo y repasamos significados
+  - Terminología
+    - Clase (a veces tipo, casi nunca plantilla)
+    - Instancia (muchas veces objeto, new)
+    - Atributos (member variables)
+    - Métodos (member function)
+  - Modificadores (members)
+    - Visibilidad: public...
+    - Ámbito: static
+    - Comportamiento: final
+  - Modificadores (classes):
+    - Visibilidad:
+    - Abstract  
+  - Para qué sirve todo esto: modelización
+    - Mente
+    - Concepto
+    - Implementación
