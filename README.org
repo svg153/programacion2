@@ -17,20 +17,35 @@
     - Sin esconder nada (sin modificadores), el código del cliente accede a atributos.
     - Evolucionamos a polares: impacto en el código cliente
 * Sesión 3: repaso, terminología, modificadores y modelización (transparencias Tema 1, no en orden)
+  - https://github.com/aherranz/programacion2
   - Cerramos el ejemplo y repasamos significados
   - Terminología
     - Clase (a veces tipo, casi nunca plantilla)
-    - Instancia (muchas veces objeto, new)
+    - Objetos (instancias, se crean con new)
     - Atributos (member variables)
     - Métodos (member function)
   - Modificadores (members)
     - Visibilidad: public...
-    - Ámbito: static
     - Comportamiento: final
+    - Ámbito: static
   - Modificadores (classes):
-    - Visibilidad:
-    - Abstract  
+    - Visibilidad
+    - Abstract
   - Para qué sirve todo esto: modelización
     - Mente
     - Concepto
     - Implementación
+    - Ejemplos: coches (carreras, concesionarios),
+      personas, cuentas bancarias, geometría,
+      elemento en videojuego (ej. snake),
+      zapateria,
+** Preguntas
+   - Si tengo dos constructores, ¿cuál se ejecuta?
+   - En el que encajen los argumentos, pero el
+     código del constructor por defecto (el que
+     no tiene argumentos) se ejecuta siempre que
+     se crea una instancia.
+* Sesión 4: Tema 2 (colecciones acotadas)
+   - Vemos algún ejemplo de sus modelados
+     realizados por los alumnos (15 mins).
+
