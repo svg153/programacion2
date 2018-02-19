@@ -48,4 +48,21 @@
 * Sesión 4: Tema 2 (colecciones acotadas)
    - Vemos algún ejemplo de sus modelados
      realizados por los alumnos (15 mins).
-
+   - Revisita explícita: paso de parámetros
+     (transparencias)
+     - Cómo funciona una llamada a un método?
+     - Parámetros: por referencia vs por valor
+     - En Java?
+     - Explorar transparencias 3 tema 1,
+       pg 4-7
+   - Tema 3: nos guiamos por las
+     transparencias.
+   - Ejercicios: ImprimirGuia e
+     ImprimirGuiaOrdenada
+     - Tu programa tiene que leer órdenes de
+       la entrada estándar
+     - Dos tipos de órdenes:
+       - a {nombre} {teléfono}
+       - r {nombre}
+     - Añadir y borrar
+   - El primero usa conjuntos y el segundo listas
