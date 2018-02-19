@@ -1,3 +1,41 @@
+* Consejos
+** Aprende a usar la "línea de comandos"
+   - El interfaz visual de ventanas de los
+     sistemas operativos es muy últil para
+     muchas tareas pero no para todas.
+   - Por ejemplo: crear ficheros, poner en
+     marcha programas, analizar el estado de
+     la red, etc. son tareas que puedes
+     hacer más rápidamente desde la línea de
+     comandos.
+   - Si usas Unix es más que probable que
+     estés habituado a usar la línea de
+     comandos.
+   - Si usas Windows puedes encontrar ayuda
+     en este video
+     https://www.youtube.com/watch?v=VyiGZW0fTxk
+     (aviso: la música es horrible)
+   - Despues de poner en marcha el "command
+     prompt" necesitas aprender el lenguaje
+     de los comandos. Este enlace puede
+     ayudarte:
+     https://www.ntu.edu.sg/home/ehchua/programming/howto/CMD_Survival.html
+** Aprende el proceso de compilación
+   - Cuando se trabaja con un IDE tan
+     potente como Eclipse, hay muchos
+     "detalles" importantes que pasan
+     desapercibidos. Entre ellos el proceso
+     de compilación de Java.
+   - Podeis empezar por este enlace y luego
+     buscar algo más de información:
+     http://www.oracle.com/technetwork/java/compile-136656.html
+   - Para poder tener bajo control el
+     proceso de compilación desde la línea
+     de comandos, os recomendamos estas
+     instrucciones:
+     https://introcs.cs.princeton.edu/java/windows/manual.php
+** Aprende a usar un buen editor de texto
+   - Candidatos: emacs, vim, sublime y atom.
 * Sesión 0: presentación
 * Sesión 1: clases, objetos y referencias (transparencias Tema 1, no en orden)
   - Clase: plantilla para fabricar objetos
@@ -46,6 +84,8 @@
      no tiene argumentos) se ejecuta siempre que
      se crea una instancia.
 * Sesión 4: Tema 2 (colecciones acotadas)
+   - Recordatorio:
+     https://github.com/aherranz/programacion2
    - Vemos algún ejemplo de sus modelados
      realizados por los alumnos (15 mins).
    - Revisita explícita: paso de parámetros
@@ -61,8 +101,7 @@
      ImprimirGuiaOrdenada
      - Tu programa tiene que leer órdenes de
        la entrada estándar
-     - Dos tipos de órdenes:
+     - Dos tipos de órdenes: Añadir y Borrar
        - a {nombre} {teléfono}
        - r {nombre}
-     - Añadir y borrar
    - El primero usa conjuntos y el segundo listas
