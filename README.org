@@ -95,7 +95,7 @@
      - En Java?
      - Explorar transparencias 3 tema 1,
        pg 4-7
-   - Tema 3: nos guiamos por las
+   - Tema 2: nos guiamos por las
      transparencias.
    - Ejercicios: ImprimirGuia e
      ImprimirGuiaOrdenada
@@ -104,4 +104,7 @@
      - Dos tipos de órdenes: Añadir y Borrar
        - a {nombre} {teléfono}
        - r {nombre}
-   - El primero usa conjuntos y el segundo listas
+   - El primero usa "conjuntos" y el segundo "listas"
+* Sesión 5: Tema 2 (colecciones acotadas)
+  - Repasar consejos.
+  - Continuamos con los ejercicios de la guía.
