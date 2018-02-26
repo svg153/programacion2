@@ -10,3 +10,5 @@ r natalia
 a verónica 123456789
 a julio 123456789
 a angel 987654321
+r luis
+r verónica
