@@ -1,7 +1,7 @@
 * Consejos
 ** Aprende a usar la "línea de comandos"
    - El interfaz visual de ventanas de los
-     sistemas operativos es muy últil para
+     sistemas operativos es muy útil para
      muchas tareas pero no para todas.
    - Por ejemplo: crear ficheros, poner en
      marcha programas, analizar el estado de
