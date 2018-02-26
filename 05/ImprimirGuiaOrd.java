@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ImprimirGuia {
+public class ImprimirGuiaOrd {
   // Tamaño máximo de la agenda
   private static final int MAX_CONTACTOS =
     20;
