@@ -29,11 +29,89 @@
    - Podeis empezar por este enlace y luego
      buscar algo más de información:
      http://www.oracle.com/technetwork/java/compile-136656.html
-   - Para poder tener bajo control el
-     proceso de compilación desde la línea
-     de comandos, os recomendamos estas
-     instrucciones:
-     https://introcs.cs.princeton.edu/java/windows/manual.php
+** Java desde la línea de comandos
+   - Como habéis podido ver, los comandos
+     a usar para compilar y ejecutar desde
+     la línea de comandos son javac y java.
+   - Dichos comandos están disponibles en
+     cualquier instalación moderna de Unix.
+   - Para poder utilizar java desde la línea
+     de comandos en Windows es necesario
+     añadir "Java" a la variable de entorno PATH:
+     - Selecciona Start -> Computer -> System Properties -> Advanced system settings -> Environment Variables -> System variables -> PATH.
+     - En Vista, selecciona Start -> My Computer -> Properties -> Advanced -> Environment Variables -> System variables -> PATH.
+     - En Windows XP, Selecciona Start -> Control Panel -> System -> Advanced -> Environment Variables -> System variables -> PATH.
+     - Algo más de información en https://www.computerhope.com/issues/ch000549.htm
+     - Tienes que añadir el directorio bin
+       del JDK al principio de la variable PATH
+     - El directorio suele tener un nombre como este:
+       "C:\Program Files\Java\jdk1.8.0_144\bin"
+     - La existencia del directorio depende de que
+       tengas instalado el JDK de Java (lo más
+       probable es que esté instalado con DrJava o
+       con Eclipse, pero siempre puedes instalarlo
+       directamente: http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+     - Tendrías que añadir el directorio
+       en cuestión al principio del PATH incluyendo
+       un punto y coma, algo como esto:
+       "C:\Program Files\Java\jdk1.8.0_144\bin;"
+     - Asegúrate que se guarda
+       (dale a OK varias veces ;)
+        Click OK three times.
+     - Comprueba que todo está ok ejecutando
+       un "command prompt":
+     - All Programs -> Accessories -> Command Prompt
+     - Tiene que aparecer algo como esto:
+#+BEGIN_EXAMPLE
+  Microsoft Windows [Version 6.3.9600]
+  (c) 2013 Microsoft Corporation. All rights reserved.
+  C:\Users\username>
+#+END_EXAMPLE
+     - Para confirmar que todo ha ido bien y que
+       tienes disponible el compilador escribe:
+#+BEGIN_EXAMPLE
+  C:\Users\username>javac -version
+  javac 1.8.0_144
+  C:\Users\username>
+#+END_EXAMPLE
+     - Para confirmar que todo ha ido bien y que
+       tienes disponible el intérprete escribe:
+#+BEGIN_EXAMPLE
+  C:\Users\username>java -version
+  java version "1.8.0_144"
+  Java(TM) SE Runtime Environment (build 1.8.0_144)
+  Java HotSpot(TM) 64-Bit Server VM (build 24.65-b04, mixed mode)
+#+END_EXAMPLE
+     - Como vas a usar la línea de comandos
+       frecuentemente,
+       es recomendable personalizarla:
+     - Click con el botón derecho en la barra del
+       command prompt
+     - Seccionar Properties
+     - Establecer Layout -> Screen Buffer Size to 80 x 500.
+     - Establecer Options -> Edit Options -> QuickEdit Mode.
+     - Seleccionar Options -> Edit Options -> Insert Mode.
+   - Para compilar desde la línea de comandos
+     - Navega desde el command prompt al directorio donde
+       tienes el código fuente (ficheros .java)
+     - Por ejemplo
+#+BEGIN_EXAMPLE
+  C:\Users\username>cd c:\users\username\sesion03
+  C:\Users\username\sesion03>
+#+END_EXAMPLE
+     - username es tu usuario en windows
+     - Compila usando javac:
+#+BEGIN_EXAMPLE
+  C:\Users\username\sesion01>javac HolaMundo.java
+  C:\Users\username\sesion01>
+#+END_EXAMPLE
+   - Para ejecutar desde la línea de comandos
+     usamos el intérprete java:
+#+BEGIN_EXAMPLE
+  C:\Users\username\sesion01>java HolaMundo
+  Hola mundo
+  C:\Users\username\sesion01>
+#+END_EXAMPLE
 ** Aprende a usar un buen editor de texto
    - Candidatos: emacs, vim, sublime y atom.
 * Sesión 0: presentación
@@ -108,3 +186,7 @@
 * Sesión 5: Tema 2 (colecciones acotadas)
   - Repasar consejos.
   - Continuamos con los ejercicios de la guía.
+
+* Sesión 6: Tema 2 (colecciones acotadas)
+  - Continuamos con los ejercicios de la guía
+  - Los estudiantes intentan resolver el problema
