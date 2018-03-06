@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
 public class ImprimirGuiaOrd {
+  static private AgendaOrdenada agenda =
+    new AgendaOrdenada(20);
+
   // Entrada estándar
   private static Scanner stdin =
     new Scanner(System.in);
@@ -8,23 +11,18 @@ public class ImprimirGuiaOrd {
   // Lee una orden y la procesa
   private static void leeYProcesaOrden() {
     String orden;
+    String nombre;
+    String telefono;
     orden = stdin.next();
     switch (orden) {
     case "a" :
-      Contacto c = new Contacto();
-      c.nombre = stdin.next();
-      c.telefono = stdin.next();
-      {
-        // Buscar y cambiar o añadir el contacto
-        // TODO
-      }
+      nombre = stdin.next();
+      telefono = stdin.next();
+      agenda.añadir(nombre, telefono);
       break;
     case "r" :
-      String nombre = stdin.next();
-      {
-        // Buscar y borrar el contacto
-        // TODO
-      }
+      nombre = stdin.next();
+      agenda.borrar(nombre);
     }
   }
 
@@ -33,7 +31,6 @@ public class ImprimirGuiaOrd {
     while (stdin.hasNext()) {
       leeYProcesaOrden();
     }
-    // Imprimimos la agenda
-    // TODO
+    System.println(agenda.agendaAstring());
    }
 }
