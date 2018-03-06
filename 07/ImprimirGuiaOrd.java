@@ -31,6 +31,6 @@ public class ImprimirGuiaOrd {
     while (stdin.hasNext()) {
       leeYProcesaOrden();
     }
-    System.println(agenda.agendaAstring());
+    System.out.println(agenda.agendaAstring());
    }
 }
