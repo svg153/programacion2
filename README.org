@@ -214,8 +214,8 @@
     - Atributos
   - Ejercicio:
     - Decidir el interfaz: Herranz vs. ???
-      - nombre del tipo
-      - nombre de las operaciones
+      - nombre del tipo: AgendaOrdenada
+      - nombre de las operaciones y parámetros
       - significado
     - Decidir testing:
       1. Ejemplo de órdenes (ordenes.txt)
