@@ -190,3 +190,41 @@
 * Sesión 6: Tema 2 (colecciones acotadas)
   - Continuamos con los ejercicios de la guía
   - Los estudiantes intentan resolver el problema
+* Sesión 7: Tema 2/4 (colecciones acotadas / TAD)
+  - Revisar consejos
+  - Abstracción:
+    - Código que usa ("cliente"):
+      el programa principal (ImprimirGuia)
+    - Código usado ("servicio"):
+      el array y los TODOs
+      (TODO = To Do = Por hacer)
+  - Cada código un desarrollador
+    - El desarrollador del código cliente: Herranz
+    - El desarrollador del código servicio: ???
+  - Crucial: definir un interfaz
+  - Tipo Abstracto de Datos
+    - Un tipo (¿qué es un "tipo"?)
+    - Sus operaciones
+    - Un significado
+    - Una implementación oculta
+  - En Java
+    - Clase
+    - Métodos
+    - Comentarios
+    - Atributos
+  - Ejercicio:
+    - Decidir el interfaz: Herranz vs. ???
+      - nombre del tipo
+      - nombre de las operaciones
+      - significado
+    - Decidir testing:
+      1. Ejemplo de órdenes (ordenes.txt)
+      2. Salida esperada (salida.ans)
+      2. Comparar salida.ans con el resultado de:
+         java ImprimirGuiaOrd < ordenes.txt
+    - Implementar el código cliente (Herranz)
+    - Implementar el código servicio (vosotros)
+    - Espero entregas: moodle
+
+
+    
