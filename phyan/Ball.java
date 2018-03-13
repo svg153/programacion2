@@ -18,11 +18,12 @@ public class Ball {
   // nombre
   // aceleración (no está claro que esto sea una propiedad de la bola)
 
-  void step(int milliseconds) {
-    // AH: la nueva posición depende de la velocidad y el tiempo en el
-    // que se aplica esa velocidad
-    // TODO: hace falta sacar el espacio desde la velocidad
+  void step(double time_ms) {
     this.position =
-      this.position.add(speed);
+      this.position.add(
+        this.speed.smul(
+          time_ms / 1000.0
+        )
+      );
   }
 }
