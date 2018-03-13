@@ -114,14 +114,14 @@
 #+END_EXAMPLE
 ** Aprende a usar un buen editor de texto
    - Candidatos: emacs, vim, sublime y atom.
-* Sesión 0: presentación
-* Sesión 1: clases, objetos y referencias (transparencias Tema 1, no en orden)
+* Sesión 00: presentación
+* Sesión 01: clases, objetos y referencias (transparencias Tema 1, no en orden)
   - Clase: plantilla para fabricar objetos
   - Objetos: datos en memoria
   - Variables, atributos, parámetros, etc.: referencias
   - Todo realizado con una clases genérica A que es un contenedor de un entero
   - Transparencias tema 1
-* Sesión 2: anatomía de una clase (transparencias Tema 1, no en orden)
+* Sesión 02: anatomía de una clase (transparencias Tema 1, no en orden)
   - Recordar: una clase es una plantilla para
     fabricar (new) objetos
   - Anatomía:
@@ -132,7 +132,7 @@
     - Aparecen problemas de ámbito de nombres
     - Sin esconder nada (sin modificadores), el código del cliente accede a atributos.
     - Evolucionamos a polares: impacto en el código cliente
-* Sesión 3: repaso, terminología, modificadores y modelización (transparencias Tema 1, no en orden)
+* Sesión 03: repaso, terminología, modificadores y modelización (transparencias Tema 1, no en orden)
   - https://github.com/aherranz/programacion2
   - Cerramos el ejemplo y repasamos significados
   - Terminología
@@ -161,7 +161,7 @@
      código del constructor por defecto (el que
      no tiene argumentos) se ejecuta siempre que
      se crea una instancia.
-* Sesión 4: Tema 2 (colecciones acotadas)
+* Sesión 04: Tema 2 (colecciones acotadas)
    - Recordatorio:
      https://github.com/aherranz/programacion2
    - Vemos algún ejemplo de sus modelados
@@ -183,24 +183,24 @@
        - a {nombre} {teléfono}
        - r {nombre}
    - El primero usa "conjuntos" y el segundo "listas"
-* Sesión 5: Tema 2 (colecciones acotadas)
+* Sesión 05: Tema 2 (colecciones acotadas)
   - Repasar consejos.
   - Continuamos con los ejercicios de la guía.
 
-* Sesión 6: Tema 2 (colecciones acotadas)
+* Sesión 06: Tema 2 (colecciones acotadas)
   - Continuamos con los ejercicios de la guía
   - Los estudiantes intentan resolver el problema
-* Sesión 7: Tema 2/4 (colecciones acotadas / TAD)
+* Sesión 07: Tema 2/4 (colecciones acotadas / TAD)
   - Revisar consejos
   - Abstracción:
     - Código que usa ("cliente"):
       el programa principal (ImprimirGuia)
-    - Código usado ("servicio"):
+    - Código usado ("proveedor"):
       el array y los TODOs
       (TODO = To Do = Por hacer)
   - Cada código un desarrollador
     - El desarrollador del código cliente: Herranz
-    - El desarrollador del código servicio: ???
+    - El desarrollador del código proveedor: ???
   - Crucial: definir un interfaz
   - Tipo Abstracto de Datos
     - Un tipo (¿qué es un "tipo"?)
@@ -215,16 +215,52 @@
   - Ejercicio:
     - Decidir el interfaz: Herranz vs. ???
       - nombre del tipo: AgendaOrdenada
-      - nombre de las operaciones y parámetros
+      - nombre de las operaciones y parámetros:
+        - public void añadir(String nombre, String telefono)
+        - public void borrar(String nombre)
+        - public String agendaAstring()
       - significado
+        - Añadir: añade una nueva entrada a la agenda si el nombre no está, si el nombre está cambia el teléfono
+        - Borrar: elimina de la agenda la entrada asociada al nombre
+        - Agenda a string: devuelve un string con la representación de la agenda (ordenada por nombre)
     - Decidir testing:
       1. Ejemplo de órdenes (ordenes.txt)
       2. Salida esperada (salida.ans)
       2. Comparar salida.ans con el resultado de:
          java ImprimirGuiaOrd < ordenes.txt
     - Implementar el código cliente (Herranz)
-    - Implementar el código servicio (vosotros)
+    - Implementar el código proveedor (vosotros)
     - Espero entregas: moodle
-
-
-    
+* Sesión 08: Tema 3 (modularización)
+  - La importancia de esta asignatura
+    - Fundamentos (*)
+    - Algoritmos (*)
+    - Estructuras de datos (**)
+    - Diseño y arquitectura (**)
+      - ¡Aquí estamos!
+  - Aprendemos en esta clase orientaciones
+    para poder "agrupar" código.
+  - Código cliente y código proveedor
+    (el otro día lo llamé servicio)
+  - Propuesta: construir una biblioteca con
+    todo el código "proveedor" que hemos ido
+    haciendo hasta ahora. A saber:
+    - Punto2D
+    - Agenda
+    - AgendaOrdenada
+  - Qué es una librería? Un conjunto de módulos
+  - Qué es un módulo? Una agrupación de
+    tipos y funciones (depende mucho del lenguaje)
+  - En Java hay dos formas de hacer módulos
+    - Paquetes (espacios de nombres = carpetas)
+      - En cada paquete hay otros (sub)paquetes y clases
+    - Clases
+  - Vamos a ver algunos ejemplos y su compilación:
+    - a.b
+    - a.c
+    - a.c.d
+    - a.c.e
+  - Jugamos con javac y con java
+    - Empezamos con javac A.java y acabamos con
+    - javac -d . A.java
+    - javac -d . B.java
