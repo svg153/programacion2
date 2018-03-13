@@ -314,3 +314,26 @@
         - Objetos físicos
   - Otro ejemplo a usar: Notación Polaca Inversa
     (https://en.wikipedia.org/wiki/Reverse_Polish_notation).
+* Sesión 10: Tema 3 (modularización) + Tema 4 (Intro TAD)
+  - Habéis probado un intérprete de Java?
+    - bsh
+    - En Java9: jshell
+    - http://www.javarepl.com/term.html
+  - Los primeros pasos en phyan son muy
+    especulativos y todo va a ir
+    cambiando pero empezar es importante.
+  - Vamos a cerrar Vector:
+    - Visibilidad
+    - Documentación
+  - Vamos a avanzar en Ball:
+    - Constructor
+    - Operación step
+    - toString
+  - phyan en github:
+    - Necesitamos un "lider"
+    - Aprended Git
+    - Pull request
+  - Segunda parte de la clase: invertir las
+    palabras de un fichero.
+    - ¿Qué es una pila (stack)?
+    - Sólo conceptual.
