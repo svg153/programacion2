@@ -264,3 +264,53 @@
     - Empezamos con javac A.java y acabamos con
     - javac -d . A.java
     - javac -d . B.java
+* Sesión 09: Tema 3 (modularización)
+  - Añadimos un programa principal que use los objetos
+    de los módulos creados.
+  - Enriquecemos las clases de la sesión 08:
+    - Para que B use realmente A.
+    - No queremos constructor por defecto (private).
+    - Redefinimos el método toString de Object.
+    - Programa imprime los objetos.
+  - Lo hacemos con un IDE (Integrated Development Environment) como
+    Eclipse y con CLI (Command Line Interface) o línea de comandos
+    - Usando CLI:
+      - Todo el código .java está en un único directorio
+      - Compilamos con
+        - `javac -d . A.java`
+        - `javac -d . B.java`
+        - `javac -d . Programa.java`
+        - Significado de la línea:
+          - `javac`: compila
+          - `-d .`: genera los .class en el direction `.` (directorio
+            actual), se podría usar cualquier otro directorio, de
+            hecho Eclipse, por ejemplo, usa `-d bin`.
+          - `A.java`: fichero a compilar.
+      - Vemos que se han creado los directorios y ficheros
+        - a/
+          - b/
+            - A.class
+          - c/
+            - B.class
+        - principal/
+          - Programa.class
+      - Para ejecutar:
+        - `java principal.Programa`
+      - Lo importante del ejercicio es hacer pruebas con
+        visibilidades, etc.
+    - Lo hacemos con Eclipse: vemos que Eclipse deja los compilados
+      (.class) en el directorio bin.
+  - Hacemos un ejercicio que vamos a ir completando
+    durante el curso, poco a poco: Physics Engine.
+  - Mucha orientación de Ángel:
+    - Nombre de la biblioteca: `phyan` (ver directorio phyan).
+    - Paquetes:
+      - phyan.maths
+        - Vector
+      - phyan.dynamics
+        - Aún no lo tenemos claro pero representa operaciones de
+          física.
+      - phyan.world
+        - Objetos físicos
+  - Otro ejemplo a usar: Notación Polaca Inversa
+    (https://en.wikipedia.org/wiki/Reverse_Polish_notation).
