@@ -1,24 +1,45 @@
 package phyan.maths;
 
+/**
+ * Class Vector represents 2D vectors.
+ */
 public class Vector {
-  // AH: de momento no me preocupo aún por la visibilidad.
-  double x;
-  double y;
-  // AH: no quiero un constructor por defecto.
+  /** x represents the X coordinate */
+  private double x;
+  /** y represents the Y coordinate */
+  private double y;
+
+  /**
+   * Avoid using default constructor
+   */  
   private Vector() {
   }
-  // AH: para construir un vector espero coordenadas cartesianas.
+
+  /**
+   * Creates a Vector given Cartesian
+   * coordinates.
+   */  
   public Vector(double x,
                 double y) {
     this.x = x;
     this.y = y;
   }
-  // TODO: necesito operaciones de suma
-  // multiplicación, rotación, etc.
 
-  // AH: operación de suma de vectores, devuelve un nuevo vector
+  /**
+   * Sums this vector with v.
+   * @return Returns a new Vector.
+   */
   public Vector add(Vector v) {
-    // TODO: a completar, de momento sólo para compilar
-    return null;
+    return new Vector(this.x + v.x,
+                      this.y + v.y);
+  }
+
+  /**
+   * Scalar multiplication of this with
+   * a factor. Returns a new Vector.
+   */
+  public Vector smul(double f) {
+    return new Vector(f * this.x,
+                      f * this.y);
   }
 }
