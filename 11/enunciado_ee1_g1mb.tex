@@ -1,0 +1,103 @@
+\documentclass[12pt]{article}
+
+\usepackage[a4paper]{geometry}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{hyperref}
+
+% \usepackage{graphics} % Or
+% \usepackage{graphicx} %% and then \includegraphics[scale=0.5,...]{filename}
+
+\usepackage[spanish]{babel}
+%\usepackage[spanish,english]{babel}
+
+\usepackage{listings}
+
+\lstset{language=Java,basicstyle=\tt}
+
+% \usepackage{url}
+
+% \usepackage{fancybox}
+% \usepackage{fancyheadings}
+
+\usepackage{courier}
+\usepackage{fourier}
+
+\title{
+  Ejercicio Evaluable 1\\
+  Filtrar datos de una pila
+}
+\author{Programación II\\G-1MB\\Escuela Técnica Superior de Ingenieros Informáticos\\Universidad Politécnica de Madrid}
+\date{3 de abril de 2018\\\small{(Ángel Herranz)}}
+
+\begin{document}
+\maketitle
+
+%% \tableofcontents
+
+\begin{description}
+\item[Objetivo:] El objetivo de este ejercicio entregable es la familiarización del alumno
+  con las clases y objetos de Java y en concreto con el tipo abstracto de datos de las pilas.
+\item[Entrega:] El ejercicio se entregará a través de moodle.
+\item[Grupos:] El ejercicio se podrá realizar en grupos de dos alumnos o de forma
+  individual. Se debe incluir al comienzo de cada fichero el/los número/s de matrícula
+  de el/los autor/es del ejercicio.
+\end{description}
+
+\section{Enunciado del ejercicio}
+
+Tu trabajo consiste en:
+\begin{enumerate}
+\item Implementar una clase que representa el tipo abstracto de datos de pilas acotadas con el siguiente comportamiento:
+  \begin{itemize}
+  \item El constructor admite el parámetro que indica la capacidad máxima de la pila.
+  \item El método \lstinline{push} apila un string en la cima de la pila.
+  \item El método \lstinline{pop} desapila el string de la cima de la pila.
+  \item El método \lstinline{top} devuelve la cima de la pila (sin desapilarla).
+  \item El método \lstinline{isEmpty} indica si la pila está vacía.
+  \item El método \lstinline{isFull} indica si la pila está llena.
+  \end{itemize}
+\item Implementar un programa que lee un texto de la entrada estándar
+  y filtra aquellas palabras de longitud superior a tres caracteres
+  utilizando pilas acotadas.
+\end{enumerate}
+
+\section{Código de apoyo}
+
+Se ofrece un fichero \url{FiltrarPalabras.java} que contiene:
+\begin{itemize}
+\item La función \lstinline{main}.
+\item La clase \lstinline{StringStack}.
+\end{itemize}
+
+En el fichero hay indicaciones \textbf{TODO} (\emph{por hacer}) para que completes lo necesario y lograr que tu entrega sea correcta.
+
+\section{Valoración de la entrega}
+
+Tu programa tiene que dar esa salida para la entrada indicada. Además se comprobará:
+\begin{itemize}
+\item Que la implementación de las pilas acotadas es la de un tipo abstracto de datos: los atributos son privados, no hay más operaciones que las necesarias.
+\item Que la implementación de las pilas acotadas respeta el significado de una pila (\emph{last-in first-out}).
+\item Que el programa hace lo que se exige. Para ello se entregan dos ficheros más:
+  \begin{itemize}
+  \item Un fichero de texto \url{el_quijote.txt} que se usará como
+    ejemplo de datos de entrada.
+  \item Un fichero de texto \url{el_quijote.ans} que contiene la salida
+    esperada por tu programa.
+  \end{itemize}
+\end{itemize}
+
+\section{Consideraciones extra}
+
+La entrega puede ser realizada por cualquiera de los dos alumnos del grupo, pero
+no por los dos a la vez.
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% TeX-PDF-mode: t
+%%% ispell-local-dictionary: "castellano"
+%%% End: 
