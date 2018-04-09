@@ -35,4 +35,17 @@ public class StringStackTests {
     assertTrue("Un push y un pop dan una pila vacía",
                s.isEmpty());
   }
+
+  @Test
+  public void pilaLlenaTrasLlenado() {
+    int n = 10;
+    String palabra = "cualquier palabra";
+    StringStack s;
+    s = new StringStack(n);
+    for (int i = 0; i < n; i++) {
+      s.push(palabra);
+    }
+    assertTrue("Tras llenar una pila, ésta debe estar llena",
+                s.isFull());
+  }
 }
