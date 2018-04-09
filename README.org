@@ -337,3 +337,14 @@
     palabras de un fichero.
     - ¿Qué es una pila (stack)?
     - Sólo conceptual.
+* Sesión 11: EE1
+* Sesión 12: Testing
+  - TDD: Test Driven Development
+  - Importante: Test == Propiedad
+  - Como ejemplo: vamos a recuperar cada uno de nosotros nuestra
+    implementación de las pilas acotadas y vamos a escribir tests para
+    dicho módulo.
+  - Usamos jUnit
+    - Ver transparencias en el tema de módulos
+    - Podemos usar CLI o Eclipse como querais
+    - Visitamos junit.org y usamos jUnit 4.12
