@@ -20,7 +20,7 @@ public class StringStack {
     
   public boolean isFull() {
     // TODO: implementar isFull
-    return true;
+    return false;
   }
     
   public void push(String s) {
