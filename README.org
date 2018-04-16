@@ -348,3 +348,8 @@
     - Ver transparencias en el tema de módulos
     - Podemos usar CLI o Eclipse como querais
     - Visitamos junit.org y usamos jUnit 4.12
+* Sesión 13: Simulacro EE2
+* Sesión 14: Excepciones y Herencia
+  - Para estar preparados para el EE2 y la práctica, vamos a echar un
+    ojo a las bibliotecas disponibles.
+  - Vamos a ver el tema de excepciones visitando list.ArrayList
