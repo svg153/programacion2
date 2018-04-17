@@ -353,3 +353,4 @@
   - Para estar preparados para el EE2 y la práctica, vamos a echar un
     ojo a las bibliotecas disponibles.
   - Vamos a ver el tema de excepciones visitando list.ArrayList
+* Sesión 15: EE2
