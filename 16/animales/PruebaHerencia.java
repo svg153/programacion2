@@ -1,15 +1,15 @@
 public class PruebaHerencia {
   public static void main(String[] args) {
-     Animal flora = new Animal(“Flora”,3,”beeee”);
+     Animal flora = new Animal("Flora",3,"beeee");
      flora.emitirSonido();
 
-     Perro toby = new Perro(“Toby”,5, “Pepe”);
+     Perro toby = new Perro("Toby",5, "Pepe");
      toby.emitirSonido();
 
      // En una variable de tipo Animal se puede guardar la referencia
      // a un objeto de tipo Perro. Esto se llama UPCASTING (es
      // automático)
-     Animal perlita = new Oveja(“perlita”,2, “Juan”);
+     Animal perlita = new Oveja("perlita",2, "Juan");
      perlita.emitirSonido();
 
      // Otro ejemplo de upcasting
@@ -44,12 +44,12 @@ public class PruebaHerencia {
      if (perlita instanceof Oveja){
         Oveja perlitaTriplicada = (Oveja) perlita;
      } else {
-         System.out.println(“Este objeto no es de tipo Oveja”);
+         System.out.println("Este objeto no es de tipo Oveja");
      }
      if (flora instanceof Oveja){
         Oveja floraDuplicada = (Oveja) flora;
      } else {
-         System.out.println(“Este objeto no es de tipo Oveja”);
+         System.out.println("Este objeto no es de tipo Oveja");
      }
   }
 }
