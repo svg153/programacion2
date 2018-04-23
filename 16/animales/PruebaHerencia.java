@@ -32,7 +32,7 @@ public class PruebaHerencia {
      ((Oveja) perlita).pastar();
 
      // Este código da error y no se puede hacer DOWNCASTING
-     Oveja floraDuplicada = (Oveja) flora; 
+     Oveja otraReferenciaParaFlora = (Oveja) flora; 
 
      // En este caso también se puede hacer DOWNCASTING
      Perro terceraReferenciaParaToby = (Perro) segundaReferenciaParaToby
@@ -47,7 +47,7 @@ public class PruebaHerencia {
          System.out.println("Este objeto no es de tipo Oveja");
      }
      if (flora instanceof Oveja){
-        Oveja floraDuplicada = (Oveja) flora;
+        Oveja otraReferenciaParaFlora = (Oveja) flora;
      } else {
          System.out.println("Este objeto no es de tipo Oveja");
      }
