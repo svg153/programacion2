@@ -354,3 +354,67 @@
     ojo a las bibliotecas disponibles.
   - Vamos a ver el tema de excepciones visitando list.ArrayList
 * Sesión 15: EE2
+* Sesión 16: Revisitamos conceptos + Tema 5 (herencia)
+** Revisitamos conceptos
+   - Principales carencias detectadas
+     - Variables vs objetos (instancias)
+     - Ámbito
+     - Invocación de métodos
+       - Stack vs Heap
+       - Cada vez que se invoca un método, ej. a.set(10)
+#+BEGIN_SRC java
+public class A {
+  private int i;
+  public void set(int x) {
+    this.i = x;
+  }
+}
+#+END_SRC
+         - Se mete en la pila el contenido de a y se le llama this
+         - Se mete en la pila el 10 y se le llama x
+         - Se ejecuta el método
+         - Cuando termina se destruye lo que se ha metido en la pila
+     - Algoritmia con arrays
+   - Pendiente: tests de stack
+   - UML: modelling
+     - UML Distilled, Martin Fowler
+   - [[https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)][SOLID]]
+   - [[https://google.github.io/styleguide/javaguide.html][Google Java Style Guide]]
+** Herencia    
+   - Tener a mano las transparencias del tema 5
+   - Nuestros ejemplos:
+     - Perros, gatos y mamíferos
+       - AH: No me gustan estos ejemplos porque cuesta saber para qué sirven, pero... lo respetamos
+       - Ejercicio: implementar el programa principal de las transparencias
+     - Software para calcular coste de personal:
+       - Ejercicio: implementar la siguiente estructura de clases y
+         hacer un test con ejemplos de cada uno y comprobar que el
+         cálculo de coste anual funciona.
+       - Persona (datos comunes de una persona + coste anual)
+         - Consultor
+         - Empleado
+           - Directivo
+     - Figuras geométricas:
+       - Ejercicio: implementar un programa que lea figuras geométricas 
+       - Figura (con varios métodos, como...)
+         - Círculo
+         - Polígono
+           - Triángulo
+           - Paralelogramo
+             - Rectángulo
+               - Cuadrado
+           - Pentágono
+           - Hexágono
+     - [[https://proofwiki.org/wiki/Definition:Unlimited_Register_Machine][URM]]
+       - Ejercicio: implementar la estructura de herencia de las instrucciones de la URM
+       - Instruction
+         - Z n
+         - S n
+         - C n m
+         - J m n q
+       - Ejercicio: completar la máquina URM
+         - Leer un programa de un fichero
+         - Implementar step
+         - Implementar run
+
+          
