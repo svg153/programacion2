@@ -7,3 +7,7 @@ compile:
 	mkdir -p bin
 	# Compilar todo el código fuente
 	javac -d bin -cp src src/*.java
+
+pruebaHerencia:
+	java -cp bin animales.PruebaHerencia
+
