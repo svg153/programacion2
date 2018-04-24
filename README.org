@@ -380,12 +380,12 @@ public class A {
      - UML Distilled, Martin Fowler
    - [[https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)][SOLID]]
    - [[https://google.github.io/styleguide/javaguide.html][Google Java Style Guide]]
-** Herencia    
+** Herencia
    - Tener a mano las transparencias del tema 5
    - Nuestros ejemplos:
      - Perros, gatos y mamíferos
        - AH: No me gustan estos ejemplos porque cuesta saber para qué sirven, pero... lo respetamos
-       - Ejercicio: implementar el programa principal de las transparencias
+       - Ejercicio: implementar el programa principal de las transparencias, paso a paso
      - Software para calcular coste de personal:
        - Ejercicio: implementar la siguiente estructura de clases y
          hacer un test con ejemplos de cada uno y comprobar que el
@@ -394,27 +394,26 @@ public class A {
          - Consultor
          - Empleado
            - Directivo
-     - Figuras geométricas:
-       - Ejercicio: implementar un programa que lea figuras geométricas 
-       - Figura (con varios métodos, como...)
-         - Círculo
-         - Polígono
-           - Triángulo
-           - Paralelogramo
-             - Rectángulo
-               - Cuadrado
-           - Pentágono
-           - Hexágono
-     - [[https://proofwiki.org/wiki/Definition:Unlimited_Register_Machine][URM]]
-       - Ejercicio: implementar la estructura de herencia de las instrucciones de la URM
-       - Instruction
-         - Z n
-         - S n
-         - C n m
-         - J m n q
-       - Ejercicio: completar la máquina URM
-         - Leer un programa de un fichero
-         - Implementar step
-         - Implementar run
-
-          
+* Sesión 17: Tema 5 (herencia)
+  - Figuras geométricas:
+    - Ejercicio: implementar un programa que lea figuras geométricas 
+    - Figura (con varios métodos, como...)
+      - Círculo
+      - Polígono
+        - Triángulo
+        - Paralelogramo
+          - Rectángulo
+            - Cuadrado
+        - Pentágono
+        - Hexágono
+  - [[https://proofwiki.org/wiki/Definition:Unlimited_Register_Machine][URM]]
+    - Ejercicio: implementar la estructura de herencia de las instrucciones de la URM
+    - Instruction
+      - Z n
+      - S n
+      - C n m
+      - J m n q
+    - Ejercicio: completar la máquina URM
+      - Leer un programa de un fichero
+      - Implementar step
+      - Implementar run
