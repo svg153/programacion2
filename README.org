@@ -417,3 +417,25 @@ public class A {
       - Leer un programa de un fichero
       - Implementar step
       - Implementar run
+* Sesión 18: Tema 7 (colecciones no acotadas)
+  - TAD/ADT (Tipo Abstracto de Datos/Abstract Data Type) vs ED/DS
+    (Estructuras de Datos/Data Structures)
+  - TAD:
+    - Nombre
+    - Operaciones
+    - Semántica (qué hace cada operación)
+  - Volvemos a recordar que siempre hay dos formas de mirar un código:
+    - Como cliente (el programador que lo usa)
+    - Como proveedor (el programador que lo programa)
+  - *Importante:* como cliente no nos importa el *cómo*
+  - *Importante:* como proveedor, hemos de tener cuidado para que el
+    cliente no sepa el *cómo*
+  - Ejemplos de TADs
+    - Punto2D
+    - Ball
+    - StringStack
+  - En este tema veremos
+    - List
+    - Stack
+    - Queue
+
