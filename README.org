@@ -438,4 +438,29 @@ public class A {
     - List
     - Stack
     - Queue
-
+  - Ejercicio 1: definir interfaces (genéricos) para los TADs del tema
+    7
+    - Stack (LIFO: last-in first-out)
+      - isEmpty
+      - push
+      - pop
+      - top
+    - Queue (FIFO: first-in first-out)
+      - isEmpty
+      - add
+      - remove
+      - peek
+    - List: acceso "random"
+      - size()
+      - get(i)
+      - set(i,e): substituye el elemento en la posición i
+      - add(i,e): añade un nuevo elemento en la posición i (desplaza el resto)
+      - remove(e):
+      - indexOf(e)
+  - Ejercicio 2: implementar los tres TADs usando como estructura de
+    datos los vectores redimensionables
+    - ArrayStack
+    - ArrayQueue
+    - ArrayList
+  - Ejercicio 3: implementar varios tests para comprobar que las tres
+    implementaciones son correctas
