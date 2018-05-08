@@ -459,8 +459,10 @@ public class A {
       - indexOf(e)
   - Ejercicio 2: implementar los tres TADs usando como estructura de
     datos los vectores redimensionables
-    - ArrayStack
-    - ArrayQueue
+    - ArrayStack (hecho en clase!)
+    - ArrayQueue (atención, además de redimiensionar es necesario
+      relizar una implementación de array circular)
     - ArrayList
   - Ejercicio 3: implementar varios tests para comprobar que las tres
-    implementaciones son correctas
+    implementaciones son correctas (hay tests interesantes de pilas y
+    colas, faltan tests de listas).
