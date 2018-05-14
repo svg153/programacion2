@@ -417,7 +417,7 @@ public class A {
       - Leer un programa de un fichero
       - Implementar step
       - Implementar run
-* Sesión 18: Tema 7 (colecciones no acotadas)
+* Sesión 18: Tema 7 (colecciones no acotadas: intro + vectores redimensionables)
   - TAD/ADT (Tipo Abstracto de Datos/Abstract Data Type) vs ED/DS
     (Estructuras de Datos/Data Structures)
   - TAD:
@@ -466,3 +466,41 @@ public class A {
   - Ejercicio 3: implementar varios tests para comprobar que las tres
     implementaciones son correctas (hay tests interesantes de pilas y
     colas, faltan tests de listas).
+* Sesión 19: dudas sobre la práctica
+* Sesión 20: Tema 7 (colecciones no acotadas: cadenas enlazadas)
+  - Las cadenas enlazadas son estructuradas de datos que nos sirven
+    para implementar TADs "clásicos" como pilas, colas, listas, etc.
+  - Sirven para representar colecciones no acotadas.
+  - Comenzamos con cadena enlazada "simple".
+  - Idea: definir una clase genérica "recursiva" que llamamos
+    SimpleNode<E> con dos atributos
+    - public E data
+    - public SimpleNode<E> next
+  - A dibujar:
+    - Estructura para representar la colección vacía
+    - Estructura para representar una colección no vacía
+    - Calcular la longitud de la cadena
+    - Añadir un elemento al principio
+    - Añadir un elemento al final
+    - Añadir un elemento en el medio
+    - Encontrar el primer elemento
+    - Encontrar el último elemento
+    - Encontrar un elemento del medio
+  - Ejercicio 1: implementar métodos que realicen las operaciones
+    anteriores (métodos cimpruebaVacía, crearCadenaDePalabras,
+    longitud, insertar*, primer, ulti y elemento en SimpleNodeTests).
+  - Ejercicio 2: implementar tests testLongitud e insertarYAcceder en
+    SimpleNodeTests.
+  - Ejercicio 3: Si tenemos una cadena de longitud 1000000, ¿Cuánto
+    "tiempo" (proporcional a...) se tarda en acceder al último
+    elemento? ¿Cómo podemos acelerarlo?
+  - Hablamos de complejidad (o-grande)
+  - Ejercicio 4: Implementar los tres TADs usando como estructura de
+    datos las cadenas simplemente enlazadas:
+    - LinkedStack (todas las operaciones en O(1))
+    - LinkedQueue (todas las operaciones en O(1))
+    - LinkedList (todas las operaciones en O(1) excepto las de
+      recorrido y búsqueda)
+  - Ejercicio 5: Implementar LinkedQueue con un único puntero (cadena
+    enlazada circular), su nombre CircularQueue.
+
