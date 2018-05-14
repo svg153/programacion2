@@ -134,6 +134,11 @@ public class SimpleNodeTests {
   @Test
   public void testLongitud() {
     // TODO
+    assertEquals(
+      "La longitud de la cadena vacía es 0",
+      0,
+      longitud(null)
+    );
   }
 
   /**
