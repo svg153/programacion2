@@ -14,9 +14,10 @@ public class SimpleNodeTests {
    * cadena enlazada vacía.
    */
   private static <E>
-    boolean compruebaVacia(SimpleNode<E> node) {
+    boolean
+    comprobarVacia(SimpleNode<E> node) {
     // TODO
-    return false;
+    return node == null;
   }
 
   /**
@@ -26,8 +27,18 @@ public class SimpleNodeTests {
   private static
     SimpleNode<String>
     crearCadenaDePalabras(int n) {
-    // TODO
-    return null;
+
+    SimpleNode<String> primero =
+      new SimpleNode<String>("Palabra 0",
+                             null);
+    SimpleNode<String> ultimo = primero;
+    for (int i = 1; i < n; i++) {
+        ultimo.next =
+          new SimpleNode<String>("Palabra " + i,
+                                 null);
+        ultimo = ultimo.next;
+    }
+    return primero;
   }
 
   /**
@@ -107,11 +118,13 @@ public class SimpleNodeTests {
   @Test
   public void crearYComprobarVacio() {
     SimpleNode<Integer> n = null;
-    assertTrue("null representa una cadena enlazada vacóa",
-               checkEmpty(n));
-    n = new SimpleNode<Integer>();
+    assertTrue("null representa una cadena enlazada vacía",
+               comprobarVacia(n));
+    n = new SimpleNode<Integer>(5, null);
     assertFalse("Cualquier instancia de SimpleNode representa una cadena enlazada no vacía",
-                checkEmpty(n));
+                comprobarVacia(n));
+    assertFalse("Una cadena con 1000 palabras no está vacía",
+                comprobarVacia(crearCadenaDePalabras(1000)));
   }
 
   /**

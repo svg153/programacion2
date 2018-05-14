@@ -487,7 +487,7 @@ public class A {
     - Encontrar el último elemento
     - Encontrar un elemento del medio
   - Ejercicio 1: implementar métodos que realicen las operaciones
-    anteriores (métodos cimpruebaVacía, crearCadenaDePalabras,
+    anteriores (métodos compruebaVacía, crearCadenaDePalabras,
     longitud, insertar*, primer, ulti y elemento en SimpleNodeTests).
   - Ejercicio 2: implementar tests testLongitud e insertarYAcceder en
     SimpleNodeTests.
