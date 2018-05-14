@@ -10,55 +10,67 @@ import g1mb.eds.SimpleNode;
 public class SimpleNodeTests {
 
   /**
-   * Comprueba que el argumento representa una cadena enlazada vacía.
+   * Comprueba que el argumento representa una
+   * cadena enlazada vacía.
    */
-  private static <E> boolean compruebaVacia(SimpleNode<E> node) {
+  private static <E>
+    boolean compruebaVacia(SimpleNode<E> node) {
     // TODO
     return false;
   }
 
   /**
-   * Genera una cadena enlazada con "Palabra 0", "Palabra 1",... "Palabra n".
+   * Genera una cadena enlazada con "Palabra 0",
+   * "Palabra 1",... "Palabra n".
    */
-  private static SimpleNode<String> crearCadenaDePalabras(int n) {
+  private static
+    SimpleNode<String>
+    crearCadenaDePalabras(int n) {
     // TODO
     return null;
   }
 
   /**
-   * Devuelve una cadena con un elemento más que la cadena de entrada
-   * en la posición i.
+   * Devuelve la longitud de la cadena.
    */
-  private static <E> int longitud(SimpleNode<E> n) {
+  private static <E>
+    int longitud(SimpleNode<E> n) {
     // TODO
     return 0;
   }
 
   /**
-   * Devuelve una cadena con un elemento más que la cadena de entrada
-   * al principio de la cadena.
+   * Devuelve una cadena con un elemento más que
+   * la cadena de entrada al principio de la
+   * cadena.
    */
-  private static <E> SimpleNode<E> insertarAlPrincipio(SimpleNode<E> n) {
+  private static <E>
+    SimpleNode<E>
+    insertarAlPrincipio(SimpleNode<E> n) {
     // TODO
     return n;
   }
 
   /**
-   * Devuelve una cadena con un elemento más que la cadena de entrada
-   * al final de la cadena.
+   * Devuelve una cadena con un elemento más que
+   * la cadena de entrada al final de la cadena.
    */
-  private static <E> SimpleNode<E> insertarAlFinal(SimpleNode<E> n) {
+  private static <E>
+    SimpleNode<E>
+    insertarAlFinal(SimpleNode<E> n) {
     // TODO
     return n;
   }
 
   /**
-   * Devuelve una cadena con un elemento más que la cadena de entrada
-   * en la posición i.
+   * Devuelve una cadena con un elemento más que
+   * la cadena de entrada en la posición i.
    */
-  private static <E> SimpleNode<E> insertar(SimpleNode<E> n,
-                                            int i,
-                                            E s) {
+  private static <E>
+    SimpleNode<E>
+    insertar(SimpleNode<E> n,
+             int i,
+             E s) {
     // TODO
     return n;
   }
@@ -82,14 +94,15 @@ public class SimpleNodeTests {
   /**
    * Devuelve el elemento iésimo de una cadaena
    */
-  private static <E> E elemento(SimpleNode<E> n,
-                                int i) {
+  private static <E> E elem(SimpleNode<E> n,
+                            int i) {
     // TODO
     return null;
   }
 
   /**
-   * Crea una cadena vacía y otra no vacía y testea la compruebaVacia.
+   * Crea una cadena vacía y otra no vacía y
+   * testea la compruebaVacia.
    */
   @Test
   public void crearYComprobarVacio() {
@@ -102,7 +115,8 @@ public class SimpleNodeTests {
   }
 
   /**
-   * Crea cadenas de varias longitudes: 0, 1, 2, 3, y 1000 y comprueba las longitudes.
+   * Crea cadenas de varias longitudes: 0, 1, 2,
+   * 3, y 1000 y comprueba las longitudes.
    */
   @Test
   public void testLongitud() {
@@ -110,9 +124,11 @@ public class SimpleNodeTests {
   }
 
   /**
-   * Crea cadenas de varias longitudes: 0, 1, 2, 3, y 1000 y comprueba
-   * que las operaciones de insertar y acceder a los elementos
-   * (primer, ulti y elemento) funcionan apropiadamente.
+   * Crea cadenas de varias longitudes: 0, 1, 2,
+   * 3, y 1000 y comprueba que las operaciones
+   *  de insertar y acceder a los elementos
+   * (primer, ulti y elemento) funcionan
+   * apropiadamente.
    */
   @Test
   public void insertarYAcceder() {
