@@ -133,12 +133,12 @@ public class SimpleNodeTests {
    */
   @Test
   public void testLongitud() {
-    // TODO
     assertEquals(
       "La longitud de la cadena vacía es 0",
       0,
       longitud(null)
     );
+    // TODO: añadir más tests
   }
 
   /**
@@ -150,6 +150,11 @@ public class SimpleNodeTests {
    */
   @Test
   public void insertarYAcceder() {
-    // TODO
+    assertEquals(
+      "La primera palabra es Palabra 0",
+      "Palabra 0",
+      primer(crearCadenaDePalabras(1))
+    );                 
+    // TODO: añadir más tests
   }
 }
