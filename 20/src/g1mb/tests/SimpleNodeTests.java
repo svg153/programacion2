@@ -73,7 +73,7 @@ public class SimpleNodeTests {
    */
   private static <E>
     SimpleNode<E>
-    insertarAlFinal(SimpleNode<E> n
+    insertarAlFinal(SimpleNode<E> n,
                     E s) {
     // TODO
     return n;
