@@ -491,16 +491,17 @@ public class A {
     longitud, insertar*, primer, ulti y elemento en SimpleNodeTests).
   - Ejercicio 2: implementar tests testLongitud e insertarYAcceder en
     SimpleNodeTests.
-  - Ejercicio 3: Si tenemos una cadena de longitud 1000000, ¿Cuánto
+* Sesión 21: Tema 7 (colecciones no acotadas: cadenas enlazadas)
+  - Continuamos explorando las cadenas enlazadas
+  - Ejercicio 1: Si tenemos una cadena de longitud 1000000, ¿Cuánto
     "tiempo" (proporcional a...) se tarda en acceder al último
     elemento? ¿Cómo podemos acelerarlo?
   - Hablamos de complejidad (o-grande)
-  - Ejercicio 4: Implementar los tres TADs usando como estructura de
+  - Ejercicio 2: Implementar los tres TADs usando como estructura de
     datos las cadenas simplemente enlazadas:
     - LinkedStack (todas las operaciones en O(1))
     - LinkedQueue (todas las operaciones en O(1))
     - LinkedList (todas las operaciones en O(1) excepto las de
       recorrido y búsqueda)
-  - Ejercicio 5: Implementar LinkedQueue con un único puntero (cadena
-    enlazada circular), su nombre CircularQueue.
-
+  - Ejercicio 3: Implementar una estructura de datos Queue con un
+    único puntero (cadena enlazada circular), su nombre CircularQueue.
