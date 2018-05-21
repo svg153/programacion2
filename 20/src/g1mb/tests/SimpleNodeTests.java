@@ -64,7 +64,7 @@ public class SimpleNodeTests {
     insertarAlPrincipio(SimpleNode<E> n,
                         E s) {
     // TODO
-    return n;
+    return null;
   }
 
   /**
@@ -76,7 +76,7 @@ public class SimpleNodeTests {
     insertarAlFinal(SimpleNode<E> n,
                     E s) {
     // TODO
-    return n;
+    return null;
   }
 
   /**
@@ -89,7 +89,7 @@ public class SimpleNodeTests {
              int i,
              E s) {
     // TODO
-    return n;
+    return null;
   }
 
   /**
