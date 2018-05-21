@@ -22,23 +22,27 @@ public class SimpleNodeTests {
 
   /**
    * Genera una cadena enlazada con "Palabra 0",
-   * "Palabra 1",... "Palabra n".
+   * "Palabra 1",... "Palabra n-1".
    */
   private static
     SimpleNode<String>
     crearCadenaDePalabras(int n) {
-
-    SimpleNode<String> primero =
-      new SimpleNode<String>("Palabra 0",
-                             null);
-    SimpleNode<String> ultimo = primero;
-    for (int i = 1; i < n; i++) {
+    if (n == 0) {
+      return null;
+    }
+    else {
+      SimpleNode<String> primero =
+        new SimpleNode<String>("Palabra 0",
+                               null);
+      SimpleNode<String> ultimo = primero;
+      for (int i = 1; i < n; i++) {
         ultimo.next =
           new SimpleNode<String>("Palabra " + i,
                                  null);
         ultimo = ultimo.next;
+      }
+      return primero;
     }
-    return primero;
   }
 
   /**
