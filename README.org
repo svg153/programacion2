@@ -492,6 +492,8 @@ public class A {
   - Ejercicio 2: implementar tests testLongitud e insertarYAcceder en
     SimpleNodeTests.
 * Sesión 21: Tema 7 (colecciones no acotadas: cadenas enlazadas)
+  - Se hacen ejercicios de la sesión 20
+* Sesión 22: Tema 7 (colecciones no acotadas: cadenas enlazadas)
   - Continuamos explorando las cadenas enlazadas
   - Ejercicio 1: Si tenemos una cadena de longitud 1000000, ¿Cuánto
     "tiempo" (proporcional a...) se tarda en acceder al último
