@@ -5,7 +5,7 @@ package g1mb.eds;
  * structure. Complexity of all methods must be O(1).
  */
 public class CircularQueue<E> implements g1mb.tads.Queue<E> {
-  public LinkedQueue() {
+  public CircularQueue() {
   }
 
   public void add(E e) {
