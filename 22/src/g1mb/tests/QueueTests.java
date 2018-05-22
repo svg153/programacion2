@@ -4,11 +4,16 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertFalse;
 import org.junit.Test;
+import org.junit.Rule;
+import org.junit.rules.Timeout;
 
 import g1mb.tads.Queue;
 import g1mb.eds.LinkedQueue;
 
 public class QueueTests {
+  @Rule
+  public Timeout globalTimeout = Timeout.seconds(10); // 10 seconds max per method tested
+
   @Test
   public void lasColasNuevasEstánVacías() {
     Queue<Integer> c;
