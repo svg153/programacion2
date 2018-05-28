@@ -507,3 +507,30 @@ public class A {
       recorrido y búsqueda)
   - Ejercicio 3: Implementar una estructura de datos Queue con un
     único puntero (cadena enlazada circular), su nombre CircularQueue.
+* Sesión 23: Tema 6 (excepciones)
+  - ¿Qué son?
+    - Ruptura del programa bajo situaciones "irresolubles".
+  - Ejemplos: EjemplosExcept
+  - Explorar lo que pasa cuando salta una excepción (comentar y
+    descomentar hasta entender).
+  - Relacionar con PRE/POST:
+    - Programming Logic (Hoare)
+  - (algunos) Métodos de una excepción:
+    - toString
+    - getMessage
+    - printStackTrace
+  - Jerarquía:
+    - Object
+      - Throwable
+        - Error
+        - Exception
+          - RuntimeException
+          - "Checked exceptions"
+  - Ejercicio: ampliar el TAD de las colas con excepciones
+    - Paso 1: usar la "runtime exception" IllegalArgumentException
+      para implementar las nuevas colas
+    - Paso 2: modificar los tests
+    - Paso 3: ampliar el TAD definiendo una nueva "checked exception"
+      g1mb.tad.EmptyQueueException que se "dispara" desde peek y
+      remove.
+    - Paso 4: modificar los tests
