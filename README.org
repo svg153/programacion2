@@ -515,6 +515,7 @@ public class A {
     descomentar hasta entender).
   - Relacionar con PRE/POST:
     - Programming Logic (Hoare)
+    - ¿Cuál es el significado de PRE/POST?
   - (algunos) Métodos de una excepción:
     - toString
     - getMessage

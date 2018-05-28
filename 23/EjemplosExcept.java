@@ -12,11 +12,11 @@ public class EjemplosExcept {
   public static void main(String[] args) {
     int i;
     
-    // // Provocamos varias exceptiones
-    // System.out.println("Intento de dividir por 0");
-    // i = 42 / 0;
-    // System.out.println("Intento de acceso a índice de array fuera de rango");
-    // indiceFueraDeRango(new String[42]);
+    // Provocamos varias exceptiones
+    System.out.println("Intento de dividir por 0");
+    i = 42 / 0;
+    System.out.println("Intento de acceso a índice de array fuera de rango");
+    indiceFueraDeRango(new String[42]);
 
     // // Y ahora las capturamos
     // try {
@@ -40,14 +40,14 @@ public class EjemplosExcept {
     //   System.out.println("Se ha intentado acceder a un índice de una array fiera de rango: " + e);
     // }
 
-    // "Checked exception"
-    System.out.println("Intento de ...");
-    FileReader fr =
-      new FileReader("supercalifragilisticoespealidoso.supercalifragilisticoespealidoso");
-    BufferedReader br = new BufferedReader(fr);
-    String linea;
-    do {
-      linea = br.readLine();
-    } while (linea != null);
+    // // "Checked exception"
+    // System.out.println("Intento de ...");
+    // FileReader fr =
+    //   new FileReader("supercalifragilisticoespealidoso.supercalifragilisticoespealidoso");
+    // BufferedReader br = new BufferedReader(fr);
+    // String linea;
+    // do {
+    //   linea = br.readLine();
+    // } while (linea != null);
   }
 }
