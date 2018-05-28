@@ -12,7 +12,7 @@ import g1mb.eds.LinkedQueue;
 
 public class QueueTests {
   @Rule
-  public Timeout globalTimeout = Timeout.seconds(10); // 10 seconds max per method tested
+  public Timeout globalTimeout = Timeout.seconds(30);
 
   @Test
   public void lasColasNuevasEstánVacías() {
@@ -50,7 +50,8 @@ public class QueueTests {
 
   @Test
   public void lasColasSonLIFO() {
-    int N = 1000000;
+    // Jugar con este número
+    int N = 25000;
     Queue<String> c;
     c = new LinkedQueue<String>();
     for (int i = 0; i < N; i++) {
