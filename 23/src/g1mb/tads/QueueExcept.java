@@ -15,17 +15,17 @@ public interface QueueExcept<E> {
   /**
    * Removes the first element on the queue.
    * @pre !isEmpty()
-   * @throws IllegalArgumentException
+   * @throws EmptyQueueException
    */
-  public void remove();
+  public void remove() throws EmptyQueueException;
 
   /**
    * Returns the first element on the queue.
    * @pre !isEmpty()
    * @return first element on the queue.
-   * @throws IllegalArgumentException
+   * @throws EmptyQueueException
    */
-  public E peek();
+  public E peek() throws EmptyQueueException;
 
   /**
    * Returns weather the queue is empty or not.

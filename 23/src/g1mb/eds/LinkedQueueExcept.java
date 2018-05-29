@@ -1,4 +1,5 @@
 package g1mb.eds;
+import g1mb.tads.EmptyQueueException;
 
 /**
  * Implementación del TAD Queue utilizando cadenas enlazadas y
@@ -25,7 +26,11 @@ public class LinkedQueueExcept<E>
     }
   }
 
-  public void remove() {
+  public void remove() throws EmptyQueueException {
+    if (ultimo == null) {
+      throw new EmptyQueueException();
+    }
+        
     if (ultimo.next == null) {
       // Se borra el único nodo y todo se queda vacío
       ultimo = null;
@@ -41,7 +46,10 @@ public class LinkedQueueExcept<E>
     }
   }
 
-  public E peek() {
+  public E peek() throws EmptyQueueException {
+    if (ultimo == null) {
+      throw new EmptyQueueException();
+    }
     return primero.data;
   }
 
