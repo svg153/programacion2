@@ -19,7 +19,7 @@
      prompt" necesitas aprender el lenguaje
      de los comandos. Este enlace puede
      ayudarte:
-     https://www.ntu.edu.sg/home/ehchua/programming/howto/CMD_Survival.html
+     http://www.ntu.edu.sg/home/ehchua/programming/howto/CMD_Survival.html
 ** Aprende el proceso de compilación
    - Cuando se trabaja con un IDE tan
      potente como Eclipse, hay muchos
